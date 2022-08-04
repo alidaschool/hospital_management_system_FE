@@ -8,6 +8,10 @@
   }
   transition: 0.3s ease all;
 
+  &__small {
+    color: $warning;
+  }
+
   &__content {
     overflow: hidden;
     color: $primary;
@@ -97,7 +101,7 @@
         font-size: 1rem;
         font-family: inherit;
         background: $primary;
-        color: $dark;
+        color: $light;
         border: 1px solid transparent;
         transition: 0.3s ease all;
 

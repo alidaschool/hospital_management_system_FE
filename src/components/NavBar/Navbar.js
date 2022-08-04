@@ -45,7 +45,7 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.header__content}>
         <Link to="/" className={classes.header__content__logo}>
-          navbar
+          Med<span className={classes.header__small}>Health</span>
         </Link>
         <nav
           className={`${classes.header__content__nav} ${
@@ -69,7 +69,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button onClick={ctaClickHandler}>Premium Page</button>
+          <button onClick={ctaClickHandler}>Sign Up</button>
         </nav>
         <div className={classes.header__content__toggle}>
           {!menuOpen ? (

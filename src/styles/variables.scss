@@ -5,7 +5,8 @@ $Roboto: 'Roboto', sans-serif;;
 // colors
 $dark: rgb(29, 29, 29);
 $light: #fff;
-$primary: rgb(162, 162, 246);
+$primary: rgb(62, 62, 227);
+$warning: rgb(245, 158, 66);
 $bg: rgb(244, 244, 255);
 $bg-light: #ececec;
 
@@ -14,10 +15,10 @@ $spacing-md: 16px;
 $spacing-lg: 32px;
 
 // border radius
-$borderRadius: 12px;
+$borderRadius: 22px;
 
 // header height
-$headerHeight: 100px;
+$headerHeight: 50px;
 
 @mixin breakpoint($point) {
     @if $point == md {

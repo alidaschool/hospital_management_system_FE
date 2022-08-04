@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "../NavBar/Navbar";
+// import Home from "../../pages/Home/Home";
 
 import classes from "./Layout.module.scss";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
+      {/* <Home /> */}
       <div className={classes.container}>{children}</div>
     </>
   );

@@ -5,10 +5,15 @@
   max-width: 100%;
   justify-content: space-between;
 
-  &__text {
+  h1 {
     width: 400px;
+    font-weight: 700;
     line-height: 1.5;
     font-size: 3rem;
+  }
+
+  &__text{
+    font-size: 1.5rem;
   }
 
   &__btn {
@@ -25,10 +30,58 @@
   }
 
   &__img {
-    width: 750px;
+    width: 650px;
   }
 
   @include breakpoint(sm) {
-    flex-direction: column;
+    display: block;
+  }
+}
+
+.content {
+  width: 100%;
+  font-family: $Roboto;
+  padding-bottom: 3.1rem;
+
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__card {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__light {
+      flex-basis: 25%;
+      margin: 0.625rem 0;
+      padding: 1.2rem;
+      text-align: center;
+      flex-direction: column;
+      background-color: $fade;
+      box-shadow: 0 0 0.6rem 0.2rem lightgray;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      padding: 0.6rem 0;
+    }
+
+    p{
+      font-size: 1rem;
+      padding: 0.6rem;
+      line-height: 1.7;
+    }
+  }
+
+  &__icon {
+    color: $primary;
+    font-size: 2.5rem;
+  }
+
+  @include breakpoint(sm) {
+    width: 100%;
   }
 }
